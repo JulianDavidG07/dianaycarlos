@@ -1,0 +1,324 @@
+* {
+  font-family: "Arvo", serif;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+								supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+  background: linear-gradient(
+    0deg,
+    rgb(218 204 194 / 30%) 0%,
+    rgb(227 172 130 / 52%) 100%
+  );
+}
+
+.sakura {
+  color: #e25c67;
+  font-family: "Arvo", serif !important;
+}
+
+.top-right-decoration {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  display: block;
+}
+
+.top-left-decoration {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.title h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 60px;
+  margin: 120px 0 32px;
+  color: #674ea7;
+}
+
+.title h2 {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #e25c67;
+  line-height: 1;
+}
+
+.title h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 24px;
+  color: #674ea7;
+  margin-top: 5px;
+}
+
+.title p {
+  color: #564861;
+  margin: 30px 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
+.venue {
+  width: auto;
+  height: auto;
+  background-color: #674ea7;
+  border-radius: 16px;
+  text-align: center;
+  color: #fff;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.venue a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.date {
+  color: #874562;
+  font-weight: 900;
+}
+
+.place {
+  color: #874562;
+  font-weight: 900;
+}
+
+.music {
+  display: none;
+}
+
+.actions {
+  display: flex;
+  font-size: 12px;
+  letter-spacing: 0pt;
+}
+
+#responsive-map {
+  overflow: hidden;
+  padding-bottom: 35.25%;
+  position: relative;
+  height: 0;
+  width: 65%;
+  margin: 40px auto;
+  border: 28px solid transparent;
+  border-image-source: url(../assets/images/marco-map.jpg);
+  border-image-slice: 46 49;
+  border-image-repeat: round;
+}
+
+#responsive-map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#countdown {
+  position: fixed;
+  display: flex;
+  bottom: 25px;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#countdown ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+#countdown ul li {
+  margin: 0 12px;
+}
+
+#countdown ul li span {
+  font-size: 18px;
+  text-align: center;
+}
+
+/************ Estilos Anillos countdwn***************/
+#countdown .diamond-ring {
+  position: relative;
+}
+
+#countdown .diamond {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: -18px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-style: solid;
+  border-color: transparent transparent #27c3f3 transparent;
+  border-width: 0 5px 5px 5px;
+  height: 0;
+  width: 24px;
+  z-index: 1;
+}
+
+#countdown .diamond:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #27c3f3 transparent transparent transparent;
+  border-width: 15px 12.5px 0 12.5px;
+}
+
+#countdown .diamond:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-color: #7fd4f9 transparent transparent transparent;
+  border-width: 15px 7px 7px;
+  width: 0;
+  height: 0;
+  left: 0.4px;
+  top: 5px;
+}
+
+#countdown .band {
+  width: 38px;
+  height: 38px;
+  border: 5px solid #fed53f;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding-top: 1px;
+}
+
+#countdown .band:before,
+#countdown .band:after {
+  content: "+";
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#countdown .band:before {
+  left: 5px;
+  top: -15px;
+  font-size: 7px;
+  text-shadow: 20px -12px;
+  animation: shine 0.5s linear infinite;
+}
+
+#countdown .band:after {
+  left: 32px;
+  top: -12px;
+  font-size: 9px;
+  text-shadow: -19px -18px;
+  animation: shine 0.5s linear infinite 0.2s;
+}
+
+#countdown .content_ {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+#countdown #done {
+  background: #f3eae3;
+}
+
+@keyframes shine {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/********** Estilos boton cancion *********/
+#play-pause {
+  background-color: #674ea7;
+  position: fixed;
+  left: 48%;
+  /* right: 48%; */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  top: 2%;
+  cursor: pointer;
+  text-indent: -999999px;
+  height: 45px;
+  width: 45px;
+  padding: 12px 18px;
+  z-index: 2;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAESUlEQVR4nO3ba6hlYxgH8HcwY+zJZTDNZFwihNxrCGUk5VI+TMMH4oNIPkghzQeEpCGKKUZDUWLKUWaKDy4ZNRIf3HNpkttoTK6DaRjGzE+v86zpnd12zj7n7HPOPmvvf+0Pe613r/U+z3rW/7nulProo48++mgNnIcn8TjOSb0EXIMddsVLODn1ArAhhL4Hd2BTfN+Op3F4qiswM4T9E9Pi81GTNfyFB3FgqhvQCCG3xPesgLX4JT7vhyVk/IZbMSvVVQGtgGMxUFjED1iCGakXFFABZ4R1VFiHS7PVpDopwOBrMBv7tVifz10Swld4C2enGnHAp4Vwa//nd9NxHTYWa1/A8akGCnijIMFVw/x+Fm4Lgsz4JwKqQ1LdOGAo4ADcG+60cp0rMCf1ggIq4NAQPFuCsKLsMfZKdSDBdoFT8UrBD+txFXZPdSDBESZZ7xbX+xgXp7qQYDuIa16GL0rF5rgi1Y0DhkK4zmubXOerOCH1ggKaXOeSwnXmXOMpHJTqQoLtAPOwHH9Xe4iUfN9UFxJsBzgazxVFmR9xI/ZMdSDBdoHT8Hqh/K9wBXZLdeKANl3ne4UiPslZZ+oVBWTkpx6pduk638RZqS4kOIKS3c34KfaZeeJZHFkbEmwH+WFgKf6IfWXP8TDm1oYE2wHmR++iSrY244baccBwwHFYXVjq4p5SQAXcEvt/PtWRBIcD7o79D9SGBDEj6o25hrCmjQp19gzn14IEsSgiwAovNp0/Jpt7cf57XD6WGza6iQPwTVE4WVz1HHKmiMewrWD/u7D3WG/YmCwFhLUtCv/eiGOnx7H/4v+cGUaGuKXw/zmDnNepTTQmgwRxEd4pTHmXmYScCUZGWEaAuT13VKc30phIEsS5EdNX2BCEN63IAa5s4oE1OVPs5D4mnARxZghSNlhvKsvluAAfFGs+xIWduP+kcUCu9zV1ln+PBso+xZoFeK1Ysz5qh+NfQjdOCohQdaCo8mwOwXfyCg6LWmC15ueoFc7s5F4mlAQNlrdWFkMVmb3vy62zYs1cPNJUC1w6KZGnDpFgniOKpmjlp7diWemuss8O352tQazNmd388ZRxvLvDB+PRaIaKp7qi7A5HaHt9RG0VVuXJkzTZMEoOyANT8U5XBYrt8c7vrNSEMnNZ6/OuHaYwQgVgf9xZNDV2xGDEiS0Km2Wg81lXjtMY+YjM14Xgq1sIfgpeLgT/Fld3XVd4tCSIJ0LwBS1I8JmC/Td19VxAB0lwDh4qSDBPiDyQX5U0FWD0JNiIJ/xrEwkekaYSjJwE94gw9bumFvfUHKw2NAnObjq2uGk+8G0sTFMZhifBzAcLQ9gK62JYsrtc2jgMS29r+h/Bxsjdp6cajstvrXx1DmMjrq+6Lznoub1WU+Il8GUIujz6beWw47KuH3YcKwyGqFUWV7m0lVPOpY0FBgcb74+8/KTJ3k8fffTRRx+ps/gXTdMlY7dNFO4AAAAASUVORK5CYII=);
+  background-repeat: no-repeat !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px;
+  animation: glowing 3500ms infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #674ea7;
+    box-shadow: 0 0 3px #8064c9;
+  }
+  50% {
+    background-color: #7350c9;
+    box-shadow: 0 0 40px #6742c4;
+  }
+  100% {
+    background-color: #5427c5;
+    box-shadow: 0 0 3px #3e09c4;
+  }
+}
+
+.play {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAESUlEQVR4nO3ba6hlYxgH8HcwY+zJZTDNZFwihNxrCGUk5VI+TMMH4oNIPkghzQeEpCGKKUZDUWLKUWaKDy4ZNRIf3HNpkttoTK6DaRjGzE+v86zpnd12zj7n7HPOPmvvf+0Pe613r/U+z3rW/7nulProo48++mgNnIcn8TjOSb0EXIMddsVLODn1ArAhhL4Hd2BTfN+Op3F4qiswM4T9E9Pi81GTNfyFB3FgqhvQCCG3xPesgLX4JT7vhyVk/IZbMSvVVQGtgGMxUFjED1iCGakXFFABZ4R1VFiHS7PVpDopwOBrMBv7tVifz10Swld4C2enGnHAp4Vwa//nd9NxHTYWa1/A8akGCnijIMFVw/x+Fm4Lgsz4JwKqQ1LdOGAo4ADcG+60cp0rMCf1ggIq4NAQPFuCsKLsMfZKdSDBdoFT8UrBD+txFXZPdSDBESZZ7xbX+xgXp7qQYDuIa16GL0rF5rgi1Y0DhkK4zmubXOerOCH1ggKaXOeSwnXmXOMpHJTqQoLtAPOwHH9Xe4iUfN9UFxJsBzgazxVFmR9xI/ZMdSDBdoHT8Hqh/K9wBXZLdeKANl3ne4UiPslZZ+oVBWTkpx6pduk638RZqS4kOIKS3c34KfaZeeJZHFkbEmwH+WFgKf6IfWXP8TDm1oYE2wHmR++iSrY244baccBwwHFYXVjq4p5SQAXcEvt/PtWRBIcD7o79D9SGBDEj6o25hrCmjQp19gzn14IEsSgiwAovNp0/Jpt7cf57XD6WGza6iQPwTVE4WVz1HHKmiMewrWD/u7D3WG/YmCwFhLUtCv/eiGOnx7H/4v+cGUaGuKXw/zmDnNepTTQmgwRxEd4pTHmXmYScCUZGWEaAuT13VKc30phIEsS5EdNX2BCEN63IAa5s4oE1OVPs5D4mnARxZghSNlhvKsvluAAfFGs+xIWduP+kcUCu9zV1ln+PBso+xZoFeK1Ysz5qh+NfQjdOCohQdaCo8mwOwXfyCg6LWmC15ueoFc7s5F4mlAQNlrdWFkMVmb3vy62zYs1cPNJUC1w6KZGnDpFgniOKpmjlp7diWemuss8O352tQazNmd388ZRxvLvDB+PRaIaKp7qi7A5HaHt9RG0VVuXJkzTZMEoOyANT8U5XBYrt8c7vrNSEMnNZ6/OuHaYwQgVgf9xZNDV2xGDEiS0Km2Wg81lXjtMY+YjM14Xgq1sIfgpeLgT/Fld3XVd4tCSIJ0LwBS1I8JmC/Td19VxAB0lwDh4qSDBPiDyQX5U0FWD0JNiIJ/xrEwkekaYSjJwE94gw9bumFvfUHKw2NAnObjq2uGk+8G0sTFMZhifBzAcLQ9gK62JYsrtc2jgMS29r+h/Bxsjdp6cajstvrXx1DmMjrq+6Lznoub1WU+Il8GUIujz6beWw47KuH3YcKwyGqFUWV7m0lVPOpY0FBgcb74+8/KTJ3k8fffTRRx+ps/gXTdMlY7dNFO4AAAAASUVORK5CYII=);
+}
+
+.pause {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVR4nO2a0QnCQBAF1w60K2Oz9mB6sADzbwsjgQhBoh6aSwI7A/kIPJa9FxjuIxEiIiIiPwKcgI7v9Jlm6XnVoWzZJ7el51WHgdH7DjgA+0+50nn/5qrDaJHh8NfRF7pM5UrnzZFbo4AWuA/PeSpXOm+OXHVY6WAWMBBrw8siShAl2CrBDeWqw0oH22wBeBPEmyDeBBM7ILIXgBJECaIEEzsgsheAEkQJogQTOyCyF4ASRAmiBBM7ILIXgBJECaIEEzsgsheAEkQJogQTOyCyF4ASRAmiBHM5oCP5z9JNv0jJssBx6XkiIiIi8YYHSO+O6vxa0tYAAAAASUVORK5CYII=) !important;
+}
+
+@media screen and (max-width: 900px) {
+  img.purple-flow {
+    max-width: 30%;
+  }
+
+  #play-pause {
+    background-color: #674ea7;
+    position: fixed;
+    left: 43%;
+  }
+
+  #responsive-map {
+    width: 100%;
+    padding-bottom: 56.25%;
+    border-image-slice: 50 50;
+  }
+}

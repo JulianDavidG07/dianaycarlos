@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap"
+    />
+    <title>Diana y Carlos</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- partial:index.partial.html -->
+      <div class="sakura-falling"></div>
+      <img
+        src="./assets/images/2p.webp"
+        alt="image-top-right"
+        class="purple-flow top-right-decoration"
+      />
+      <img
+        src="./assets/images/1p.png"
+        alt="image-top-left"
+        class="purple-flow top-left-decoration"
+      />
+      <section id="media"></section>
+      <div class="wrap">
+        <div class="title text-center">
+          <h1>Diana <span class="sakura">&</span> Carlos</h1>
+
+          <h3>Nos vamos a casar</h3>
+          <p>
+            El <span class="date">día 19 de marzo del 2023</span>, a partir de
+            las 2 pm;
+            <span class="place">Rancho de Nacho, vereda el chacal.</span> Km 6.5
+            via Siberia - Tenjo
+          </p>
+        </div>
+      </div>
+
+      <div id="responsive-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7783149025145!2d-74.1419547!3d4.8080851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8140aa18b1d5%3A0x4d99688aaffbb2ee!2sEL%20RANCHO%20DE%20NACHO!5e0!3m2!1ses-419!2sco!4v1674793588227!5m2!1ses-419!2sco"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen="true"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <div style="height: 190px"></div>
+
+    <div id="countdown">
+      <p id="diana-carlos">Diana & Carlos se casan en:</p>
+      <p id="done"></p>
+      <ul>
+        <li class="diamond-ring">
+          <div class="diamond"></div>
+          <div class="band">
+            <span id="days">0</span>
+            <span class="content_">Día(s)</span>
+          </div>
+        </li>
+        <li class="diamond-ring">
+          <div class="diamond"></div>
+          <div class="band">
+            <span id="hours">0</span>
+            <span class="content_">Hora(s)</span>
+          </div>
+        </li>
+        <li class="diamond-ring">
+          <div class="diamond"></div>
+          <div class="band">
+            <span id="minutes">0</span>
+            <span class="content_">Minuto(s)</span>
+          </div>
+        </li>
+        <li class="diamond-ring">
+          <div class="diamond"></div>
+          <div class="band">
+            <span id="seconds">0</span>
+            <span class="content_">Segundo(s)</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- musica boton -->
+    <audio id="track">
+      <source src="./assets/mp3/Algo que se quede.mp3" type="audio/mpeg" />
+    </audio>
+    
+    <div id="play-pause" class="play">Play</div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS Pagge -->
+    <script src="./scripts/script-dc.js" type="text/javascript"></script>
+
+  </body>
+</html>
