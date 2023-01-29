@@ -305,6 +305,49 @@ body {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVR4nO2a0QnCQBAF1w60K2Oz9mB6sADzbwsjgQhBoh6aSwI7A/kIPJa9FxjuIxEiIiIiPwKcgI7v9Jlm6XnVoWzZJ7el51WHgdH7DjgA+0+50nn/5qrDaJHh8NfRF7pM5UrnzZFbo4AWuA/PeSpXOm+OXHVY6WAWMBBrw8siShAl2CrBDeWqw0oH22wBeBPEmyDeBBM7ILIXgBJECaIEEzsgsheAEkQJogQTOyCyF4ASRAmiBBM7ILIXgBJECaIEEzsgsheAEkQJogQTOyCyF4ASRAmiBHM5oCP5z9JNv0jJssBx6XkiIiIi8YYHSO+O6vxa0tYAAAAASUVORK5CYII=) !important;
 }
 
+
+/***********Estilos versiculo *************/
+blockquote {
+  margin: 0 auto!important;
+  max-width: 500px;
+  position: relative;
+  font-family: "Georgia", serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #333;
+  quotes: "“" "”" "‘" "’";
+}
+blockquote::before, blockquote::after {
+  color: #874562;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 0.1em;
+}
+blockquote::before {
+  position: absolute;
+  left: -4px;
+    top: 5px;
+  content: open-quote;
+  margin-right: 0.15em;
+  vertical-align: -0.15em;
+}
+blockquote::after {
+  position: absolute;
+  content: close-quote;
+  vertical-align: -0.7em;
+  bottom: 8px;
+  right: 0;
+}
+
+blockquote footer {
+	position: relative;
+  font-size: 18px;
+  color: #e25c67;
+  font-family: "Arvo", serif !important;
+  font-weight: 700;
+}
+
+
 @media screen and (max-width: 900px) {
   img.purple-flow {
     max-width: 30%;
