@@ -254,6 +254,7 @@ p.place {
 
 #countdown {
   position: fixed;
+  z-index: 200;
   display: flex;
   bottom: 25px;
   right: 0;
