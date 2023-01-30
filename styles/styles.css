@@ -492,6 +492,9 @@ blockquote footer {
   object-fit: cover;
 }
 
+
+
+
 @media (min-width: 992px) {
   .container {
     max-width: 960px !important;
