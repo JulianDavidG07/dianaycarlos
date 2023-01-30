@@ -99,7 +99,6 @@ figcaption {
   margin-top: 10px;
 }
 
-
 .sakura {
   color: #e25c67;
   font-family: "Arvo", serif !important;
@@ -126,7 +125,34 @@ figcaption {
   font-weight: bold;
   font-style: normal;
   font-size: 60px;
-  margin: 120px 0 32px;
+  margin: 120px 0 0;
+  color: #674ea7;
+}
+
+.logo-dc {
+  display: inline-block;
+  border-top: 2px solid #674ea7;
+  border-left: 2px solid #674ea7;
+  border-bottom: 2px solid #e25c67;
+  border-right: 2px solid #e25c67;
+  padding: 2px 12px 0px;
+  margin: 20px auto;
+}
+
+.logo-dc * {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 35px;
+}
+
+.logo-dc_d {
+  color: #e25c67;
+}
+
+.logo-dc_y {
+  color: #874562;
+}
+
+.logo-dc_c {
   color: #674ea7;
 }
 
@@ -229,10 +255,17 @@ p.place {
   position: fixed;
   display: flex;
   bottom: 25px;
+  right: 0;
+  left: 0;
+  text-align: center;
   width: 100%;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+#countdown * {
+  -webkit-text-stroke: 0.1px white;
 }
 
 #countdown ul {
@@ -313,7 +346,7 @@ p.place {
 #countdown .band:after {
   content: "+";
   position: absolute;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255 214 0 / 50%);
 }
 
 #countdown .band:before {
@@ -333,8 +366,7 @@ p.place {
 }
 
 #countdown .content_ {
-  font-size: 11px;
-  font-weight: bold;
+  font-size: 12px;
 }
 
 #countdown #done {
@@ -440,7 +472,6 @@ blockquote footer {
   font-weight: 700;
 }
 
-
 .masonry {
   column-count: 2;
   background: #674ea7;
@@ -459,9 +490,6 @@ blockquote footer {
   height: 100%;
   object-fit: cover;
 }
-
-
-
 
 @media (min-width: 992px) {
   .container {
