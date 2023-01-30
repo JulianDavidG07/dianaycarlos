@@ -99,13 +99,6 @@ figcaption {
   margin-top: 10px;
 }
 
-.toton {
-  margin: 20px auto 50px;
-  border: 28px solid transparent;
-  border-image-source: url("https://3.imimg.com/data3/ON/IP/MY-10659985/wooden-photo-frame-500x500.png");
-  border-image-slice: 60;
-  border-image-repeat: round;
-}
 
 .sakura {
   color: #e25c67;
@@ -426,7 +419,7 @@ blockquote::after {
 blockquote::before {
   position: absolute;
   left: -4px;
-  top: 5px;
+  top: 0;
   content: open-quote;
   margin-right: 0.15em;
   vertical-align: -0.15em;
