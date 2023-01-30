@@ -47,27 +47,31 @@ body {
   color: #674ea7;
 }
 
-.title h2 {
+h2 {
   font-family: "Dancing Script", cursive;
   font-weight: bold;
   font-style: normal;
   margin: 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 40px!important;
   color: #e25c67;
   line-height: 1;
 }
 
-.title h3 {
-  font-weight: 300;
+h3 {
+  font-weight: 600!important;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 24px;
+  font-size: 20px!important;
   color: #674ea7;
-  margin-top: 5px;
 }
 
-.title p {
+h4 {
+  color: #874562;
+    font-weight: 900;
+}
+
+p.place {
   color: #564861;
   margin: 30px 0 20px;
   text-transform: uppercase;
@@ -109,6 +113,12 @@ body {
   display: flex;
   font-size: 12px;
   letter-spacing: 0pt;
+}
+
+.dresscode-block .small-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 24px!important;
+  color: #e25c67;
 }
 
 #responsive-map {
@@ -348,6 +358,8 @@ blockquote footer {
 }
 
 
+
+
 @media screen and (max-width: 900px) {
   img.purple-flow {
     max-width: 30%;
@@ -356,7 +368,7 @@ blockquote footer {
   #play-pause {
     background-color: #674ea7;
     position: fixed;
-    left: 43%;
+    left: 44%;
   }
 
   #responsive-map {
