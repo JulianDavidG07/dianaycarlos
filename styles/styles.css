@@ -17,6 +17,14 @@ body {
   );
 }
 
+.toton {
+    margin: 20px auto 50px;
+    border: 28px solid transparent;
+    border-image-source: url('https://3.imimg.com/data3/ON/IP/MY-10659985/wooden-photo-frame-500x500.png');
+    border-image-slice: 60;
+    border-image-repeat: round;
+}
+
 .sakura {
   color: #e25c67;
   font-family: "Arvo", serif !important;
@@ -358,7 +366,11 @@ blockquote footer {
 }
 
 
-
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px!important;
+  }
+}
 
 @media screen and (max-width: 900px) {
   img.purple-flow {
