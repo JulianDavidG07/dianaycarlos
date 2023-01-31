@@ -495,121 +495,52 @@ blockquote footer {
 }
 
 /********** Estilos boton confirmación ***********/
-:root {
-  --text-color: hsla(210, 50%, 85%, 1);
-  --shadow-color: hsla(210, 40%, 52%, .4);
-  --btn-color: hsl(210, 80%, 42%);
-  --bg-color: #141218;
-}
-
-a.btn__wa {
-  position:relative;
-  text-decoration: none;
-  padding: 10px 20px;  
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 16px;  
-  color: var(--text-color);
-  background-color: var(--btn-color);
-  box-shadow: var(--shadow-color) 2px 2px 22px;
-  border-radius: 4px; 
-  z-index: 0;  
-  overflow: hidden;   
-}
-
-a.btn__wa:hover {
-  color: white !important;
-}
-
-a.btn__wa:focus {
-  outline-color: transparent;
-  box-shadow: var(--btn-color) 2px 2px 22px;
-}
-
-a.btn__wa .right::after, a.btn__wa::after {
-  content: var(--content);
+a.confirmation-btn {
   display: block;
-  position: absolute;
-  white-space: nowrap;
-  padding: 40px 40px;
-  pointer-events:none;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
 }
 
-a.btn__wa::after{
-  font-weight: 200;
-  top: -30px;
-  left: -20px;
-} 
-
-a.btn__wa .right, a.btn__wa .left {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
+a.confirmation-btn span{
+  position: relative;
+  z-index: 2;
 }
 
-a.btn__wa .right {
-  left: 66%;
+a.confirmation-btn.btn_c {
+  background: #674ea7;
+  color: white;
+  border: 2px solid #674ea7;
 }
 
-a.btn__wa .left {
-  right: 66%;
+a.confirmation-btn.btn_c:hover {
+  background: transparent;
+  color: #674ea7;
 }
 
-a.btn__wa .right::after {
-  top: -30px;
-  left: calc(-66% - 20px);
-  
-  background-color: var(--bg-color);
-  color:transparent;
-  transition: transform .4s ease-out;
-  transform: translate(0, -90%) rotate(0deg)
+a.confirmation-btn.btn_d {
+  background: #e25c67;
+  color: white;
+  border: 2px solid #e25c67;
 }
 
-a.btn__wa:hover .right::after {
-  transform: translate(0, -47%) rotate(0deg);
-  color: white !important;
+a.confirmation-btn.btn_d:hover {
+  background: transparent;
+  color: #e25c67;  
 }
 
-a.btn__wa .right:hover::after {
-  transform: translate(0, -50%) rotate(-7deg);
-  color: white !important;
-}
 
-a.btn__wa .left:hover ~ .right::after {
-  transform: translate(0, -50%) rotate(7deg);
-  color: white !important;
-}
 
-/* bubbles */
-a.btn__wa::before {
-  content: '';
-  pointer-events: none;
-  opacity: .6;
-  background:
-    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
-    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
-    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
 
-  width: 100%;
-  height: 300%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  animation: bubbles 2s linear infinite both;
-}
 
-@keyframes bubbles {
-  from {
-    transform: translate();
-  }
-  to {
-    transform: translate(0, -66.666%);
-  }
-}
+
+
 
 
 @media (min-width: 992px) {
