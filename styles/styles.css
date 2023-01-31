@@ -649,7 +649,69 @@ a.confirmation-btn.btn_d:hover {
 }
 
 
+/* Instagram
+====================== */
+.instagram {
+  /* shape */
+  width: 150px;
+  height: 150px;
+  border-radius: 60px;
+  
+  /* gradient */
+  background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+  
+  /* shadow */
+  box-shadow: -3px 3px 10px #ccc;
+  
+  /* camera centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* Camera
+====================== */
+.camera {
+width: 70%;
+  height: 75%;
+  border-radius: 30px;
+  border: 10px solid #fff;
+  
+  /* lens centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* for flash positioning */
+  position: relative;
+}
+
+/* lens 
+============= */
+.camera::before {
+  content:"";
+  
+  /* shape */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  
+  /* style */
+  border: 10px solid #fff;
+}
+
+/* flash
+============= */
+.camera::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  right: 5px;
+  top: 8px;
+}
 
 
 
