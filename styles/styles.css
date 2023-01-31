@@ -536,6 +536,118 @@ a.confirmation-btn.btn_d:hover {
 }
 
 
+/** LLUVIA DE SOBRES  */
+
+:root {
+  --light-blue: #7bddef;
+  --dark-blue: #58d1e2;
+  --light-grey: #cfcdcb;
+  --dark-grey: #e1dfdd;
+  --lightest-grey: #faf9f8;
+  --light-rose: #e25c67;
+}
+
+
+#e1 {
+  position: absolute;
+  height: 65px;
+  width: 100px;
+  background: linear-gradient(
+    to bottom,
+    var(--dark-blue),
+    var(--light-blue) 40%
+  );
+  border-radius: 5px;
+  top: 45%;
+  left: 38%;
+  transform: rotate(-15deg);
+  z-index: 1;
+}
+
+#e1:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: -3.1em;
+  bottom: -0.34em;
+  left: 50%;
+  border-radius: 3px 3px;
+  box-sizing: border-box;
+  border: 35px solid #58d1e2;
+  border-color: transparent transparent var(--light-blue) var(--light-blue);
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+  box-shadow: -9px 9px 9px 0 #58d1e2;
+}
+
+#e2 {
+  position: absolute;
+  height: 55px;
+  width: 90px;
+  background: linear-gradient(
+    to bottom,
+    var(--light-grey),
+    var(--dark-grey) 40%
+  );
+  border-radius: 5px;
+  top: 20%;
+  left: 48%;
+  transform: rotate(15deg);
+  z-index: 0;
+}
+
+#e2:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: -2.6em;
+  bottom: -0.3em;
+  left: 50%;
+  border-radius: 3px 3px;
+  box-sizing: border-box;
+  border: 30px solid var(--light-grey);
+  border-color: transparent transparent var(--dark-grey) var(--dark-grey);
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+  box-shadow: -9px 9px 9px 0 #cfcdcb;
+}
+
+
+#e3 {
+  position: absolute;
+  height: 55px;
+  width: 90px;
+  background: linear-gradient(
+    to bottom,
+    var(--light-rose),
+    var(--light-rose) 40%
+  );
+  border-radius: 5px;
+  top: 25%;
+    left: 25%;
+    transform: rotate(315deg);
+  z-index: 0;
+}
+
+#e3:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: -2.6em;
+  bottom: -0.3em;
+  left: 50%;
+  border-radius: 3px 3px;
+  box-sizing: border-box;
+  border: 30px solid var(--light-rose);
+  border-color: transparent transparent var(--light-rose) var(--light-rose);
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+  box-shadow: -9px 9px 9px 0 #dc3545;
+}
+
 
 
 
